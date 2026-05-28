@@ -42,7 +42,7 @@ export function AboutSection() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1560472355-536de3962603?w=800&auto=format&fit=crop&q=80"
+                src="/medias/2.jpg"
                 alt="Africa Sun Services Team"
                 fill
                 className="object-cover"
