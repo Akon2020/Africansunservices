@@ -14,7 +14,8 @@ export const translations = {
     },
     topbar: {
       phone: '+243 810162265',
-      email: 'africasunservices@gmail.com',
+      email1: 'africasunservices@gmail.com',
+      email2: 'info@africasunservices.org',
       address: 'Lubumbashi, RD Congo',
     },
     hero: {

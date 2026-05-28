@@ -26,7 +26,11 @@ export function Topbar() {
             </a>
             <a href="mailto:africasunservices@gmail.com" className="flex items-center gap-2 hover:text-orange transition-colors">
               <Mail className="w-3.5 h-3.5" />
-              <span>{t.topbar.email}</span>
+              <span>{t.topbar.email1}</span>
+            </a>
+            <a href="mailto:info@africasunservices.org" className="flex items-center gap-2 hover:text-orange transition-colors">
+              <Mail className="w-3.5 h-3.5" />
+              <span>{t.topbar.email2}</span>
             </a>
             <div className="flex items-center gap-2 text-white/70">
               <MapPin className="w-3.5 h-3.5" />
