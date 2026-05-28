@@ -1,42 +1,53 @@
-import type { Metadata, Viewport } from 'next'
-import { Inter, Poppins } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
-import { ThemeProvider } from '@/lib/theme-context'
-import { LanguageProvider } from '@/lib/i18n/context'
+import type { Metadata, Viewport } from "next";
+import { Inter, Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
+import { ThemeProvider } from "@/lib/theme-context";
+import { LanguageProvider } from "@/lib/i18n/context";
 
-const inter = Inter({ 
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-})
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
-const poppins = Poppins({ 
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-poppins',
-  display: 'swap',
-})
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: 'AFRICA-SUN SERVICES SARL | Your Satisfaction, Our Priority',
-  description: 'AFRICA-SUN SERVICES SARL - Votre partenaire de confiance en logistique, construction, agriculture, import-export et services environnementaux à travers l\'Afrique. Your trusted partner for sustainable multi-service solutions across Africa.',
-  keywords: ['Africa Sun Services', 'logistics', 'construction', 'agriculture', 'import export', 'DRC', 'Lubumbashi', 'environmental services', 'consultancy'],
-  authors: [{ name: 'Isaac Akonkwa' }],
-  creator: 'Isaac Akonkwa',
+  title: "AFRICA SUN SERVICES SARL | Your Satisfaction, Our Priority",
+  description:
+    "AFRICA SUN SERVICES SARL - Votre partenaire de confiance en logistique, construction, agriculture, import-export et services environnementaux à travers l'Afrique. Your trusted partner for sustainable multi-service solutions across Africa.",
+  keywords: [
+    "Africa Sun Services",
+    "logistics",
+    "construction",
+    "agriculture",
+    "import export",
+    "DRC",
+    "Lubumbashi",
+    "environmental services",
+    "consultancy",
+  ],
+  authors: [{ name: "Isaac Akonkwa" }],
+  creator: "Isaac Akonkwa",
   openGraph: {
-    title: 'AFRICA-SUN SERVICES SARL | Your Satisfaction, Our Priority',
-    description: 'Multi-Service Solutions for Sustainable Growth across Africa',
-    url: 'https://africasunservices.org',
-    siteName: 'AFRICA-SUN SERVICES SARL',
-    locale: 'fr_CD',
-    alternateLocale: 'en_US',
-    type: 'website',
+    title: "AFRICA SUN SERVICES SARL | Your Satisfaction, Our Priority",
+    description: "Multi-Service Solutions for Sustainable Growth across Africa",
+    url: "https://africasunservices.org",
+    siteName: "AFRICA SUN SERVICES SARL",
+    locale: "fr_CD",
+    alternateLocale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'AFRICA-SUN SERVICES SARL',
-    description: 'Multi-Service Solutions for Sustainable Growth across Africa',
+    card: "summary_large_image",
+    title: "AFRICA SUN SERVICES SARL",
+    description: "Multi-Service Solutions for Sustainable Growth across Africa",
   },
   icons: {
     icon: [
@@ -59,36 +70,37 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-}
+};
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#0B1F3A' },
-    { media: '(prefers-color-scheme: dark)', color: '#020617' },
+    { media: "(prefers-color-scheme: light)", color: "#0B1F3A" },
+    { media: "(prefers-color-scheme: dark)", color: "#020617" },
   ],
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${poppins.variable}`} suppressHydrationWarning>
+    <html
+      lang="fr"
+      className={`${inter.variable} ${poppins.variable}`}
+      suppressHydrationWarning
+    >
       <body className="font-sans antialiased bg-background">
         <ThemeProvider>
-          <LanguageProvider>
-            {children}
-          </LanguageProvider>
+          <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
-  )
+  );
 }
-
 
 /* import type { Metadata, Viewport } from 'next'
 import { Inter, Poppins } from 'next/font/google'
@@ -114,21 +126,21 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://africasunservices.org'),
 
   title: {
-    default: 'AFRICA-SUN SERVICES SARL | Your Satisfaction, Our Priority',
-    template: '%s | AFRICA-SUN SERVICES SARL',
+    default: 'AFRICA SUN SERVICES SARL | Your Satisfaction, Our Priority',
+    template: '%s | AFRICA SUN SERVICES SARL',
   },
 
   description:
-    "AFRICA-SUN SERVICES SARL est votre partenaire de confiance en logistique, construction, agriculture, import-export, environnement, consultance et services multisectoriels en Afrique. Multi-Service Solutions for Sustainable Growth.",
+    "AFRICA SUN SERVICES SARL est votre partenaire de confiance en logistique, construction, agriculture, import-export, environnement, consultance et services multisectoriels en Afrique. Multi-Service Solutions for Sustainable Growth.",
 
-  applicationName: 'AFRICA-SUN SERVICES SARL',
+  applicationName: 'AFRICA SUN SERVICES SARL',
 
   referrer: 'origin-when-cross-origin',
 
   keywords: [
-    'AFRICA-SUN SERVICES SARL',
+    'AFRICA SUN SERVICES SARL',
     'Africa Sun Services',
-    'A-S Services',
+    'ASS Services',
     'logistics company Africa',
     'construction company DRC',
     'agriculture services Africa',
@@ -157,7 +169,7 @@ export const metadata: Metadata = {
   ],
 
   creator: 'Isaac Akonkwa',
-  publisher: 'AFRICA-SUN SERVICES SARL',
+  publisher: 'AFRICA SUN SERVICES SARL',
 
   category: 'Business',
 
@@ -176,12 +188,12 @@ export const metadata: Metadata = {
 
     url: 'https://africasunservices.org',
 
-    title: 'AFRICA-SUN SERVICES SARL | Your Satisfaction, Our Priority',
+    title: 'AFRICA SUN SERVICES SARL | Your Satisfaction, Our Priority',
 
     description:
       'Votre partenaire de confiance en logistique, construction, agriculture, import-export et services stratégiques à travers l’Afrique.',
 
-    siteName: 'AFRICA-SUN SERVICES SARL',
+    siteName: 'AFRICA SUN SERVICES SARL',
 
     countryName: 'Democratic Republic of Congo',
 
@@ -190,14 +202,14 @@ export const metadata: Metadata = {
         url: '/logo1.jpg',
         width: 1200,
         height: 630,
-        alt: 'AFRICA-SUN SERVICES SARL',
+        alt: 'AFRICA SUN SERVICES SARL',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'AFRICA-SUN SERVICES SARL',
+    title: 'AFRICA SUN SERVICES SARL',
     description:
       'Multi-Service Solutions for Sustainable Growth across Africa.',
 
@@ -246,7 +258,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'AFRICA-SUN SERVICES',
+    title: 'AFRICA SUN SERVICES',
   },
 
   formatDetection: {
@@ -290,9 +302,9 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
 
-    name: 'AFRICA-SUN SERVICES SARL',
+    name: 'AFRICA SUN SERVICES SARL',
 
-    alternateName: 'A-S SERVICES SARL',
+    alternateName: 'ASS SERVICES SARL',
 
     url: 'https://africasunservices.org',
 
@@ -333,7 +345,7 @@ export default function RootLayout({
 
     founder: {
       '@type': 'Person',
-      name: 'AFRICA-SUN SERVICES SARL',
+      name: 'AFRICA SUN SERVICES SARL',
     },
 
     knowsAbout: [

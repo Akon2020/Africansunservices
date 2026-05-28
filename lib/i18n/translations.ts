@@ -19,7 +19,7 @@ export const translations = {
       address: "Lubumbashi, RD Congo",
     },
     hero: {
-      badge: "AFRICA-SUN SERVICES SARL",
+      badge: "AFRICA SUN SERVICES SARL",
       title: "Solutions Multi-Services pour une Croissance Durable",
       subtitle:
         "Votre partenaire de confiance en logistique, construction, agriculture, import-export, services environnementaux et opérations stratégiques à travers l'Afrique.",
@@ -37,7 +37,7 @@ export const translations = {
       badge: "À Propos de Nous",
       title: "Un Partenaire Fiable pour Votre Croissance",
       description:
-        "AFRICA-SUN SERVICES SARL est une entreprise congolaise active dans plusieurs secteurs économiques, notamment le commerce général, les services, l'agriculture, la production, la transformation et la distribution.",
+        "AFRICA SUN SERVICES SARL est une entreprise congolaise active dans plusieurs secteurs économiques, notamment le commerce général, les services, l'agriculture, la production, la transformation et la distribution.",
       mission: {
         title: "Notre Mission",
         text: "Développer des chaînes de valeur intégrées avec une plus-value des produits locaux, accessibles et conformes aux normes d'hygiène internationales.",
@@ -261,7 +261,7 @@ export const translations = {
       address: "Lubumbashi, DR Congo",
     },
     hero: {
-      badge: "AFRICA-SUN SERVICES SARL",
+      badge: "AFRICA SUN SERVICES SARL",
       title: "Multi-Service Solutions for Sustainable Growth",
       subtitle:
         "Your trusted partner in logistics, construction, agriculture, import-export, environmental services and strategic operations across Africa.",
@@ -279,7 +279,7 @@ export const translations = {
       badge: "About Us",
       title: "A Reliable Partner for Your Growth",
       description:
-        "AFRICA-SUN SERVICES SARL is a Congolese company active in several economic sectors, including general trade, services, agriculture, production, processing and distribution.",
+        "AFRICA SUN SERVICES SARL is a Congolese company active in several economic sectors, including general trade, services, agriculture, production, processing and distribution.",
       mission: {
         title: "Our Mission",
         text: "To develop integrated value chains with added value from local products that are accessible and comply with international hygiene standards.",
@@ -312,7 +312,7 @@ export const translations = {
             "Supply of goods and services tailored to your operational needs.",
         },
         logistics: {
-          title: "Logistics",
+          title: "Logistics & Transport",
           description:
             "Complete transport and logistics management for your goods.",
         },

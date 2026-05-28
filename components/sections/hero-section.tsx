@@ -167,7 +167,7 @@ export function HeroSection() {
               <div className="w-px h-12 bg-border" />
               <div className="text-center">
                 <div className="text-3xl font-heading font-bold text-orange">
-                  99
+                  2
                 </div>
                 <div className="text-sm text-muted-foreground">Ans</div>
               </div>
@@ -207,7 +207,7 @@ export function HeroSection() {
                     <p className="text-white font-semibold text-sm">
                       {t.slogan}
                     </p>
-                    <p className="text-white/70 text-xs">Lubumbashi, DRC</p>
+                    <p className="text-white/70 text-xs">Democratic Republic of Congo</p>
                   </div>
                 </div>
               </div>

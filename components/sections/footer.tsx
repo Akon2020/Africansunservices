@@ -79,7 +79,7 @@ export function Footer() {
                 </div>
                 <div>
                   <span className="font-heading font-bold text-lg text-white block">
-                    AFRICA-SUN
+                    AFRICA SUN
                   </span>
                   <span className="text-xs text-white/60 tracking-wider">
                     SERVICES SARL
@@ -204,7 +204,7 @@ export function Footer() {
           {/* Bottom Bar */}
           <div className="py-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-white/50 text-sm">
-              © {new Date().getFullYear()} AFRICA-SUN SERVICES SARL.{" "}
+              © {new Date().getFullYear()} AFRICA SUN SERVICES SARL.{" "}
               {t.footer.rights}
             </p>
             <p className="text-white/50 text-sm">

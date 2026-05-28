@@ -69,7 +69,7 @@ export function Navbar() {
               </div>
               <div className="hidden sm:flex flex-col">
                 <span className="font-heading font-bold text-lg text-navy dark:text-white leading-tight">
-                  AFRICA-SUN
+                  AFRICA SUN
                 </span>
                 <span className="text-xs text-muted-foreground font-medium tracking-wider">
                   SERVICES SARL
@@ -183,7 +183,7 @@ export function Navbar() {
                       />
                     </div>
                     <span className="font-heading font-bold text-navy dark:text-white">
-                      A-S SERVICES
+                      ASS SERVICES
                     </span>
                   </div>
                   <button

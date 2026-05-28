@@ -1,6 +1,6 @@
 {
-  "name": "AFRICA-SUN SERVICES SARL",
-  "short_name": "A-S SERVICES",
+  "name": "AFRICA SUN SERVICES SARL",
+  "short_name": "ASS SERVICES",
   "description": "Multi-Service Solutions for Sustainable Growth across Africa.",
   "start_url": "/",
   "scope": "/",
@@ -97,7 +97,7 @@
     {
       "name": "Contact",
       "short_name": "Contact",
-      "description": "Get in touch with AFRICA-SUN SERVICES SARL",
+      "description": "Get in touch with AFRICA SUN SERVICES SARL",
       "url": "/contact",
       "icons": [
         {

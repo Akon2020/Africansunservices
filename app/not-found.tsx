@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Home, ArrowRight, Compass, Phone } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Header } from '@/components/layout';
-import { Footer } from '@/components/sections';
-import { useTranslation } from '@/lib/i18n/context';
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import { Home, ArrowRight, Compass, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Header } from "@/components/layout";
+import { Footer } from "@/components/sections";
+import { useTranslation } from "@/lib/i18n/context";
 
 export default function NotFound() {
   const { language, t } = useTranslation();
@@ -25,12 +25,12 @@ export default function NotFound() {
             <div className="absolute top-20 left-10 w-72 h-72 bg-sunset/10 rounded-full blur-3xl" />
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-growth/10 rounded-full blur-3xl" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-navy/5 dark:bg-white/5 rounded-full blur-3xl" />
-            
+
             {/* Decorative Arrow Pattern */}
             <motion.div
               className="absolute top-40 right-20 opacity-20"
               animate={{ x: [0, 20, 0], rotate: [0, 5, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
               <Image
                 src="/logo1.jpg"
@@ -43,7 +43,12 @@ export default function NotFound() {
             <motion.div
               className="absolute bottom-40 left-20 opacity-20 rotate-180"
               animate={{ x: [0, -20, 0], rotate: [180, 175, 180] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1,
+              }}
             >
               <Image
                 src="/logo1.jpg"
@@ -61,23 +66,27 @@ export default function NotFound() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 className="relative mb-8"
               >
                 <span className="text-[12rem] md:text-[16rem] font-bold leading-none bg-gradient-to-br from-sunset via-sunset/80 to-growth bg-clip-text text-transparent select-none">
                   404
                 </span>
-                
+
                 {/* Floating Logo */}
                 <motion.div
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                   animate={{ y: [0, -15, 0] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
                 >
                   <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-white dark:bg-navy/50 shadow-2xl flex items-center justify-center p-2 border border-sunset/20">
                     <Image
                       src="/logo1.jpg"
-                      alt="AFRICA-SUN SERVICES"
+                      alt="AFRICA SUN SERVICES"
                       width={100}
                       height={100}
                       className="rounded-full object-contain"
@@ -133,7 +142,7 @@ export default function NotFound() {
                     <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
-                
+
                 <Link href="/services">
                   <Button
                     size="lg"
@@ -176,20 +185,32 @@ export default function NotFound() {
                 transition={{ duration: 0.5, delay: 0.9 }}
                 className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground"
               >
-                <Link href="/about" className="hover:text-sunset transition-colors">
-                  {language === 'fr' ? 'À Propos' : 'About'}
+                <Link
+                  href="/about"
+                  className="hover:text-sunset transition-colors"
+                >
+                  {language === "fr" ? "À Propos" : "About"}
                 </Link>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
-                <Link href="/sectors" className="hover:text-sunset transition-colors">
-                  {language === 'fr' ? 'Secteurs' : 'Sectors'}
+                <Link
+                  href="/sectors"
+                  className="hover:text-sunset transition-colors"
+                >
+                  {language === "fr" ? "Secteurs" : "Sectors"}
                 </Link>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
-                <Link href="/gallery" className="hover:text-sunset transition-colors">
-                  {language === 'fr' ? 'Galerie' : 'Gallery'}
+                <Link
+                  href="/gallery"
+                  className="hover:text-sunset transition-colors"
+                >
+                  {language === "fr" ? "Galerie" : "Gallery"}
                 </Link>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
-                <Link href="/partners" className="hover:text-sunset transition-colors">
-                  {language === 'fr' ? 'Partenaires' : 'Partners'}
+                <Link
+                  href="/partners"
+                  className="hover:text-sunset transition-colors"
+                >
+                  {language === "fr" ? "Partenaires" : "Partners"}
                 </Link>
               </motion.div>
             </div>
