@@ -146,7 +146,7 @@ export function GalleryPageContent() {
               ) : (
                 <div className="relative aspect-video rounded-2xl overflow-hidden bg-black">
                   <iframe
-                    src={`${selectedItem.src}?autoplay=1`}
+                    src={`${selectedItem.src}`}
                     title={selectedItem.title}
                     className="w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

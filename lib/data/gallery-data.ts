@@ -53,23 +53,23 @@ export const galleryItems: MediaItem[] = [
   // =====================
   {
     id: 1,
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&auto=format&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80',
-    title: 'Projet de Construction',
-    titleEn: 'Construction Project',
-    category: 'construction',
-    location: 'Lubumbashi',
+    type: 'video',
+    src: 'https://player.cloudinary.com/embed/?cloud_name=duwlqqn88&public_id=Intro_zxsuk8',
+    thumbnail: '/medias/2.jpg',  // Utilisez une image de votre choix pour la miniature
+    title: 'Une video d\'introduction de la conférence Biashara',
+    titleEn: 'Introduction Video for Biashara Conference',
+    category: 'events',
+    location: 'Togo',
   },
   {
     id: 2,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&auto=format&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&auto=format&fit=crop&q=80',
-    title: 'Chantier en Cours',
-    titleEn: 'Ongoing Construction Site',
-    category: 'construction',
-    location: 'Kinshasa',
+    src: 'https://res.cloudinary.com/duwlqqn88/image/upload/WhatsApp_Image_2026-05-27_at_5.01.37_PM_zhtrum.jpg',
+    thumbnail: 'https://res.cloudinary.com/duwlqqn88/image/upload/WhatsApp_Image_2026-05-27_at_5.01.37_PM_zhtrum.jpg',
+    title: 'Photo des partenaires ',
+    titleEn: 'Photo of Partners',
+    category: 'events',
+    location: 'Bukavu',
   },
 
   // =====================
