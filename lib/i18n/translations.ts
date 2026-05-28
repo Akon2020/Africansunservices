@@ -70,7 +70,7 @@ export const translations = {
             "Fourniture de biens et services adaptés à vos besoins opérationnels.",
         },
         logistics: {
-          title: "Logistique",
+          title: "Logistique & Transport",
           description:
             "Gestion complète de transport et logistique pour vos marchandises.",
         },

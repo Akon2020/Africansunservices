@@ -159,3 +159,6 @@ vite.config.ts.timestamp-*
 
 # Zip file
 *.zip
+
+# Export file
+out/
