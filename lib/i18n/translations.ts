@@ -16,7 +16,7 @@ export const translations = {
       phone: "+243 837 138 488",
       email1: "africasunservices@gmail.com",
       email2: "info@africasunservices.org",
-      address: "Lubumbashi, RD Congo",
+      address: "RD Congo",
     },
     hero: {
       badge: "AFRICA SUN SERVICES SARL",

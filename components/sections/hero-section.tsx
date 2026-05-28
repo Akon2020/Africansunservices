@@ -167,7 +167,7 @@ export function HeroSection() {
               <div className="w-px h-12 bg-border" />
               <div className="text-center">
                 <div className="text-3xl font-heading font-bold text-orange">
-                  2
+                  1
                 </div>
                 <div className="text-sm text-muted-foreground">Ans</div>
               </div>

@@ -61,7 +61,7 @@ export function AboutSection() {
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-heading font-bold text-orange">
-                    2
+                    1
                   </div>
                   <div className="text-xs text-muted-foreground mt-1">
                     Ans de durée
