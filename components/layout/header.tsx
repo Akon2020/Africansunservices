@@ -192,12 +192,12 @@ export function Header() {
                 </span>
               </div>
               {/* Arrow accent */}
-              <div className="absolute -right-6 top-1/2 -translate-y-1/2 hidden lg:block">
+              <div className="absolute -right-18 top-1/2 -translate-y-1/2">
                 <Image
                   src="/logo2.jpg"
                   alt=""
-                  width={24}
-                  height={12}
+                  width={60}
+                  height={30}
                   className="opacity-80"
                 />
               </div>

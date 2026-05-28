@@ -184,7 +184,7 @@ export function HeroSection() {
             {/* Main Image Container */}
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/1.jpg"
+                src="/medias/1.jpg"
                 alt="Africa Sun Services - Modern Business Operations"
                 fill
                 className="object-contain"
