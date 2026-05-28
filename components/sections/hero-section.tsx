@@ -184,10 +184,10 @@ export function HeroSection() {
             {/* Main Image Container */}
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80"
+                src="/images/1.jpg"
                 alt="Africa Sun Services - Modern Business Operations"
                 fill
-                className="object-cover"
+                className="object-contain"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />

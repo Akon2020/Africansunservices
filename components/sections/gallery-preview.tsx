@@ -7,73 +7,7 @@ import Link from 'next/link';
 import { Play, X, ArrowRight, ZoomIn } from 'lucide-react';
 import { useTranslation } from '@/lib/i18n/context';
 import { Button } from '@/components/ui/button';
-
-type MediaItem = {
-  id: number;
-  type: 'image' | 'video';
-  src: string;
-  thumbnail: string;
-  title: string;
-  category: string;
-  location?: string;
-};
-
-const galleryItems: MediaItem[] = [
-  {
-    id: 1,
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&auto=format&fit=crop&q=80',
-    title: 'Construction Project',
-    category: 'construction',
-    location: 'Lubumbashi',
-  },
-  {
-    id: 2,
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&auto=format&fit=crop&q=80',
-    title: 'Logistics Operations',
-    category: 'logistics',
-    location: 'Kinshasa',
-  },
-  {
-    id: 3,
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&auto=format&fit=crop&q=80',
-    title: 'Agricultural Fields',
-    category: 'agriculture',
-    location: 'Sud-Kivu',
-  },
-  {
-    id: 4,
-    type: 'video',
-    src: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&auto=format&fit=crop&q=80',
-    title: 'Equipment Showcase',
-    category: 'equipment',
-    location: 'Bukavu',
-  },
-  {
-    id: 5,
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&auto=format&fit=crop&q=80',
-    title: 'Partnership Meeting',
-    category: 'partnerships',
-    location: 'Lubumbashi',
-  },
-  {
-    id: 6,
-    type: 'image',
-    src: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&auto=format&fit=crop&q=80',
-    thumbnail: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&auto=format&fit=crop&q=80',
-    title: 'Environmental Services',
-    category: 'environment',
-    location: 'Haut-Katanga',
-  },
-];
+import { galleryPreviewItems, type MediaItem } from '@/lib/data/gallery-data';
 
 export function GalleryPreview() {
   const { t } = useTranslation();
@@ -106,7 +40,7 @@ export function GalleryPreview() {
 
         {/* Gallery Grid - Masonry Style */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-          {galleryItems.map((item, index) => (
+          {galleryPreviewItems.map((item, index) => (
             <motion.div
               key={item.id}
               initial={{ opacity: 0, y: 20 }}
