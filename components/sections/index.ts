@@ -1,0 +1,9 @@
+export { HeroSection } from './hero-section';
+export { PartnersCarousel } from './partners-carousel';
+export { AboutSection } from './about-section';
+export { ServicesSection } from './services-section';
+export { WhyUsSection } from './why-us-section';
+export { GalleryPreview } from './gallery-preview';
+export { CtaSection } from './cta-section';
+export { ContactSection } from './contact-section';
+export { Footer } from './footer';
