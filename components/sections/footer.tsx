@@ -153,10 +153,10 @@ export function Footer() {
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-orange flex-shrink-0" />
                   <a
-                    href="tel:+243810162265"
+                    href="tel:+243837138488"
                     className="text-white/70 hover:text-orange transition-colors text-sm"
                   >
-                    +243 810 162 265
+                    +243 837 138 488
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -166,6 +166,15 @@ export function Footer() {
                     className="text-white/70 hover:text-orange transition-colors text-sm"
                   >
                     africasunservices@gmail.com
+                  </a>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Mail className="w-5 h-5 text-orange flex-shrink-0" />
+                  <a
+                    href="mailto:info@africasunservices.org"
+                    className="text-white/70 hover:text-orange transition-colors text-sm"
+                  >
+                    info@africasunservices.org
                   </a>
                 </li>
               </ul>

@@ -68,8 +68,8 @@ export function ContactPageContent() {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">{t.contact.info.phone}</p>
-                    <a href="tel:+243810162265" className="text-sm font-medium text-foreground hover:text-orange transition-colors">
-                      +243 810 162 265
+                    <a href="tel:+243837138488" className="text-sm font-medium text-foreground hover:text-orange transition-colors">
+                      +243 837 138 488
                     </a>
                   </div>
                 </div>
@@ -84,6 +84,9 @@ export function ContactPageContent() {
                     <p className="text-xs text-muted-foreground">{t.contact.info.email}</p>
                     <a href="mailto:africasunservices@gmail.com" className="text-sm font-medium text-foreground hover:text-orange transition-colors">
                       africasunservices@gmail.com
+                    </a><br />
+                    <a href="mailto:info@africasunservices.org" className="text-sm font-medium text-foreground hover:text-orange transition-colors">
+                      info@africasunservices.org
                     </a>
                   </div>
                 </div>
@@ -92,7 +95,7 @@ export function ContactPageContent() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/243810162265"
+              href="https://wa.me/243837138488"
               target="_blank"
               rel="noopener noreferrer"
               className="block p-5 rounded-xl bg-green/10 border border-green/20 hover:bg-green/20 transition-colors group"
@@ -106,7 +109,7 @@ export function ContactPageContent() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-green">{t.contact.info.whatsapp}</p>
-                    <p className="text-xs text-muted-foreground">+243 810 162 265</p>
+                    <p className="text-xs text-muted-foreground">+243 837 138 488</p>
                   </div>
                 </div>
                 <svg className="w-5 h-5 text-green transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

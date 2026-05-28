@@ -13,7 +13,7 @@ export const translations = {
       getQuote: "Demander un Devis",
     },
     topbar: {
-      phone: "+243 810162265",
+      phone: "+243 837 138 488",
       email1: "africasunservices@gmail.com",
       email2: "info@africasunservices.org",
       address: "Lubumbashi, RD Congo",
