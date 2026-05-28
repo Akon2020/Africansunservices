@@ -1,4 +1,4 @@
-/* import type { Metadata, Viewport } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
@@ -38,6 +38,23 @@ export const metadata: Metadata = {
     title: 'AFRICA-SUN SERVICES SARL',
     description: 'Multi-Service Solutions for Sustainable Growth across Africa',
   },
+  icons: {
+    icon: [
+      {
+        url: "/logo1.jpg",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/logo1.jpg",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/logo1.jpg",
+        type: "image/png",
+      },
+    ],
+    apple: "/logo1.jpg",
+  },
   robots: {
     index: true,
     follow: true,
@@ -71,9 +88,9 @@ export default function RootLayout({
     </html>
   )
 }
- */
 
-import type { Metadata, Viewport } from 'next'
+
+/* import type { Metadata, Viewport } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
@@ -352,4 +369,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-}
+} */
